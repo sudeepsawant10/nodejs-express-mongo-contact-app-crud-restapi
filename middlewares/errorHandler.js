@@ -10,6 +10,7 @@ const errorHandler = (err, req, res, next) => {
                     message:err.message,
                     stackTrace: err.stack
                 });
+                
         case constants.NOT_FOUND_ERROR:
             res.json({
                 title: "Not Found",
